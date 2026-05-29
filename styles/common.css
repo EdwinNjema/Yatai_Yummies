@@ -1,0 +1,19 @@
+/* General Styles */
+body {
+  background-color:whitesmoke;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 
+
+  
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 278;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
+}
+ 

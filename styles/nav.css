@@ -1,0 +1,134 @@
+/* Navigation Wrapper */
+.navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#010100;
+    color: #fdb750;
+    padding: 20px 40px;
+    position: relative;
+    cursor: context-menu;
+  }
+  
+  /* Left Column */
+  .left-column {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .left-column .icon {
+    font-size: 1.5em;
+    color: #710019;
+  }
+  
+  /* Center Column (Logo + Navbar) */
+  .centre-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Logo */
+  .banner-image img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px; /* Controls spacing between logo & navbar */
+  }
+  
+  /* Navigation Links - Horizontal Layout */
+  .links-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Navigation Links */
+  .navigation-link a {
+    text-decoration: none;
+    color: #710019;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+  
+  .navigation-link a:hover {
+    color: #d32f2f;
+  }
+  
+  /* Right Column */
+  .right-column {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Responsive Fixes */
+  @media (max-width: 768px) {
+    .navigation-wrapper {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .left-column, .right-column {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .links-column {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
+  
+  .navigation-wrapper> .right-column {
+  
+    display: flex;
+    align-items: center;
+  }
+  .navigation-wrapper> .right-column> .phone-wrapper
+  {
+  
+    text-align: right;
+  }
+  
+  
+  .navigation-wrapper> .right-column> .contact-icon
+  {
+  margin-left: 15px;
+  font-size: 2em; 
+  
+  }
+  .navigation-wrapper> .right-column> .phone-wrapper a
+  {
+  color: #710019;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: 0.5s;
+  }
+  
+  .navigation-wrapper> .right-column> .phone-wrapper a:hover
+  {
+  
+    color: blue;
+  }
+  .navigation-wrapper> .right-column> .contact-icon a
+  {
+  color: #fdb750;
+  transition: 0.5s;
+  
+  }
+  .navigation-wrapper> .right-column> .contact-icon a:hover
+  {
+  color: #d32f2f;
+  }
+  
+  .navigation-wrapper> .left-column> .address-wrapper> .location
+  {
+    color: #0000ff;
+    font: size 0.8em;;
+  }
+  
